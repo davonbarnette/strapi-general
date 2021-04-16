@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "minecraft_coordinates",
+  "info": {
+    "name": "Minecraft Coordinate",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "x": {
+      "type": "float",
+      "required": true
+    },
+    "y": {
+      "type": "float"
+    },
+    "z": {
+      "type": "float",
+      "unique": false,
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "owner": {
+      "type": "string",
+      "default": "minecraft"
+    }
+  }
+}

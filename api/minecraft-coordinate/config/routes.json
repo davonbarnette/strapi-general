@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/minecraft-coordinates",
+      "handler": "minecraft-coordinate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/minecraft-coordinates/count",
+      "handler": "minecraft-coordinate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/minecraft-coordinates/:id",
+      "handler": "minecraft-coordinate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/minecraft-coordinates",
+      "handler": "minecraft-coordinate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/minecraft-coordinates/:id",
+      "handler": "minecraft-coordinate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/minecraft-coordinates/:id",
+      "handler": "minecraft-coordinate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
