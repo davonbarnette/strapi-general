@@ -33,6 +33,17 @@
     "owner": {
       "type": "string",
       "default": "minecraft"
+    },
+    "world": {
+      "type": "enumeration",
+      "enum": [
+        "overworld",
+        "nether",
+        "end"
+      ]
+    },
+    "category": {
+      "type": "string"
     }
   }
 }
