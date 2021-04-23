@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/itineraries",
+      "handler": "itinerary.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itineraries/count",
+      "handler": "itinerary.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/itineraries/:id",
+      "handler": "itinerary.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/itineraries",
+      "handler": "itinerary.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/itineraries/:id",
+      "handler": "itinerary.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/itineraries/:id",
+      "handler": "itinerary.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

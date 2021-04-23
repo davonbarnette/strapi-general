@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "name": "Trip",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "destinations": {
+      "collection": "destination"
+    }
+  }
+}

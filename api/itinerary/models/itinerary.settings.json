@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "itineraries",
+  "info": {
+    "name": "Itinerary"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "users_permissions_user": {
+      "via": "itinerary",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "destinations": {
+      "collection": "destination"
+    }
+  }
+}

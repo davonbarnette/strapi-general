@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destination_links",
+  "info": {
+    "name": "Destination Link"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "destination": {
+      "via": "destination_links",
+      "model": "destination"
+    }
+  }
+}
